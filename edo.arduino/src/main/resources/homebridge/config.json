@@ -1,0 +1,21 @@
+{
+    "bridge": {
+        "name": "EDO",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "012-34-567"
+    },
+    
+    "description": "Homebridge@EDO",
+    
+    "accessories": [
+       {
+           "accessory": "SimpleHttpSwitch",
+           "name": "Eingang",
+           "url": "http://127.0.0.1:1337/command/opendoor",
+           "default_state_off": true, 
+           "sendimmediately": "",
+           "http_method": "GET"
+       }
+   ]
+}

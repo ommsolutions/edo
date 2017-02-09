@@ -1,0 +1,11 @@
+html
+    head
+        title= title
+        script(src="http://code.jquery.com/jquery-1.9.1.js")
+        script(src="/scripts/main.js")
+    body
+    block content
+        h1= message
+        button(onclick=("Main.openDoor()")) Open door
+
+        div(id="response")
